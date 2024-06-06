@@ -1,0 +1,52 @@
+.reviews {
+  margin-top: 50px;
+}
+.reviews .loader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews .add {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.reviews .add .addForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.reviews .add .addForm textarea, .reviews .add .addForm select {
+  padding: 10px;
+}
+.reviews .add .addForm select {
+  width: 200px;
+  align-self: flex-end;
+}
+@media screen and (max-width: 900px) {
+  .reviews .add .addForm select {
+    width: 100%;
+  }
+}
+.reviews .add .addForm button {
+  align-self: flex-end;
+  width: 100px;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  background-color: var(--green-color);
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .reviews .add .addForm button {
+    align-self: center;
+    width: 100%;
+  }
+}
+.reviews hr {
+  height: 0;
+  border: 0.5px solid lightgray;
+  margin: 50px 0px;
+}/*# sourceMappingURL=Reviews.css.map */

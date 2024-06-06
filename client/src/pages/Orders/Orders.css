@@ -1,0 +1,59 @@
+.orders {
+  display: flex;
+  justify-content: center;
+}
+.orders .loader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orders .container {
+  width: 75%;
+  margin: auto;
+  padding: 50px 0px;
+  overflow-x: scroll;
+}
+.orders .container::-webkit-scrollbar {
+  display: none;
+}
+.orders .container .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.orders .container table {
+  min-width: 100%;
+  margin: auto;
+}
+.orders .container table tr {
+  height: 50px;
+}
+.orders .container table tr th {
+  text-align: left;
+}
+.orders .container table tr td {
+  padding: 0 10px;
+}
+.orders .container table tr td img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.orders .container table tr .message {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.orders .container table tr:nth-child(even) {
+  background-color: rgba(0, 255, 98, 0.0588235294);
+}
+@media screen and (max-width: 900px) {
+  .orders .container {
+    width: 90%;
+  }
+}
+.orders .container table tr:nth-child(even) {
+  background-color: rgb(110 141 238 / 6%);
+}

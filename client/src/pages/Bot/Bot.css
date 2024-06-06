@@ -1,0 +1,95 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+/* Chatbot */
+.botIcon {
+  right: 15px;
+  bottom: 15px;
+  position: fixed;
+  z-index: 9999;
+}
+.iconInner {
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  background: #a64bf4;
+  background: -webkit-linear-gradient(
+    to left,
+    #00dbde,
+    #fc00ff,
+    #00dbde,
+    #fc00ff
+  );
+  background: -o-linear-gradient(to left, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: -moz-linear-gradient(to left, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: linear-gradient(to left, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background-position: 50%;
+  background-size: 300%;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 1.7em;
+  height: 2em;
+  justify-content: center;
+  width: 2em;
+}
+.botSubject,
+.messages,
+.showBotSubject .botIconContainer,
+.showMessenger .botIconContainer {
+  display: none;
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  color: #d58521;
+}
+
+.close-button {
+  margin: 20px auto;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+  transform-style: preserve-3D;
+}
+
+.close-button:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.close-button-1 {
+  margin: 20px auto;
+  -webkit-transition: -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out;
+  transform-origin: center;
+  transform-style: preserve-3D;
+}
+
+.close-button-1:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.close-button-2 {
+  margin: 20px auto;
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: transform 1s linear;
+  transform-origin: center;
+  transform-style: preserve-3D;
+}
+
+.close-button-2:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.sc-csmVar {
+  color: white;
+}

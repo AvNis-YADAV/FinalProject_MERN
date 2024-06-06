@@ -1,0 +1,13 @@
+.pay {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+}
+.pay h2 {
+  margin: 20px 0 40px 0;
+}
+@media screen and (max-width: 900px) {
+  .pay {
+    width: 90%;
+  }
+}/*# sourceMappingURL=Pay.css.map */

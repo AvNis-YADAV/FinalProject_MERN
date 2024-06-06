@@ -1,0 +1,10 @@
+.verify-btn {
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+.verify-:hover {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}

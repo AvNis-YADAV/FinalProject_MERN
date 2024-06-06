@@ -1,0 +1,34 @@
+.notFound {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notFound .container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.notFound .container h1 {
+  color: #ED0331;
+  font-size: 3.75rem;
+  font-weight: 800;
+}
+@media screen and (max-width: 900px) {
+  .notFound .container h1 {
+    font-size: 2.5rem;
+  }
+}
+.notFound .container .text h2 {
+  color: #1A202C;
+  font-size: 2rem;
+  font-weight: 800;
+}
+@media screen and (max-width: 900px) {
+  .notFound .container .text h2 {
+    font-size: 1.5rem;
+  }
+}
+.notFound .container .text p {
+  padding: 5px 0;
+}/*# sourceMappingURL=NotFound.css.map */

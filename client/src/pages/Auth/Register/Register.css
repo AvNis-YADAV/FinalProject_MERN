@@ -1,0 +1,172 @@
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register form {
+  width: 70%;
+  margin: auto;
+  padding: 100px 0px;
+  display: flex;
+  gap: 120px;
+}
+.register form h1 {
+  color: rgb(70, 65, 65);
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+.register form .left #profilePic {
+  display: none;
+  border: none;
+}
+.register form .left .imagesInput {
+  margin: 18px 0px;
+  border: 1px solid #5f63ff;
+  color: #5f63ff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  width: 60%;
+  text-align: center;
+}
+.register form .left .imagesInput:hover {
+  background-color: #5f63ff;
+  color: #fff;
+}
+.register form .left,
+.register form .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+.register form .left label,
+.register form .right label {
+  color: #010000;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+.register form .left input,
+.register form .left textarea,
+.register form .right input,
+.register form .right textarea {
+  min-height: 30px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(82, 66, 66);
+  padding: 12px 26px;
+}
+.register form .left input:focus,
+.register form .left textarea:focus,
+.register form .right input:focus,
+.register form .right textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(92, 110, 231, 0.7);
+}
+.register form .left input:focus::-moz-placeholder,
+.register form .left textarea:focus::-moz-placeholder,
+.register form .right input:focus::-moz-placeholder,
+.register form .right textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+.register form .left input:focus::placeholder,
+.register form .left textarea:focus::placeholder,
+.register form .right input:focus::placeholder,
+.register form .right textarea:focus::placeholder {
+  color: transparent;
+}
+.register form .left button,
+.register form .right button {
+  border: none;
+  border-radius: 50px;
+  padding: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #544cf9;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+}
+.register form .left button:hover,
+.register form .left button:focus,
+.register form .left button:active,
+.register form .right button:hover,
+.register form .right button:active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+.register form .left button:disabled,
+.register form .right button:disabled {
+  background-color: rgb(151, 153, 198);
+  color: #fff;
+  cursor: not-allowed;
+}
+.register form .left .toggle,
+.register form .right .toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Hide default HTML checkbox */
+}
+.register form .left .toggle .switch,
+.register form .right .toggle .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+.register form .left .toggle .switch input,
+.register form .right .toggle .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.register form .left .toggle .slider,
+.register form .right .toggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+.register form .left .toggle .slider:before,
+.register form .right .toggle .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.register form .left .toggle input:checked + .slider,
+.register form .right .toggle input:checked + .slider {
+  background-color: #2196f3;
+}
+.register form .left .toggle input:focus + .slider,
+.register form .right .toggle input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+.register form .left .toggle input:checked + .slider:before,
+.register form .right .toggle input:checked + .slider:before {
+  transform: translateX(26px);
+}
+@media screen and (max-width: 900px) {
+  .register form {
+    flex-direction: column;
+  }
+}

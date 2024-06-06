@@ -1,0 +1,13 @@
+* .link {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.next {
+  right: -8px;
+  z-index: 0;
+}/*# sourceMappingURL=App.css.map */

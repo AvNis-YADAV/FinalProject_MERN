@@ -1,0 +1,138 @@
+/* .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login form {
+  width: 360px;
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login form h1 {
+  color: gray;
+  margin-bottom: 20px;
+}
+.login form label {
+  color: gray;
+  font-size: 18px;
+}
+.login form input,
+.login form textarea {
+  padding: 20px;
+  border: 1px solid rgb(216, 214, 214);
+}
+.login form button {
+  border: none;
+  padding: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #1dbf73;
+  cursor: pointer;
+}
+.login form button:disabled {
+  background-color: gray;
+  color: #fff;
+  cursor: not-allowed;
+}
+.login form span {
+  color: red;
+  font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+  .login form {
+    width: 80%;
+    margin: auto;
+  }
+} # sourceMappingURL=Login.css.map */
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login form {
+  width: 500px;
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(70, 65, 65);
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+.login form p {
+  text-align: center;
+  margin-top: 30px;
+}
+.login form label {
+  color: gray;
+  font-size: 18px;
+}
+.login form input,
+.login form textarea {
+  width: 100%;
+  padding: 20px;
+  border-radius: 50px;
+  min-height: 30px;
+  border: 1px solid #e0e0e0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(82, 66, 66);
+  padding: 12px 26px;
+}
+.login form input:focus,
+.login form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(92, 110, 231, 0.7);
+}
+.login form input:focus::-moz-placeholder,
+.login form textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+.login form input:focus::placeholder,
+.login form textarea:focus::placeholder {
+  color: transparent;
+}
+.login form button {
+  border: none;
+  border-radius: 50px;
+  padding: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #544cf9;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+}
+.login form button:hover,
+.login form button:focus,
+.login form button:active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+.login form button:disabled {
+  background-color: rgb(151, 153, 198);
+  color: #fff;
+  cursor: not-allowed;
+}
+.login form span {
+  color: red;
+  font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+  .login form {
+    width: 70%;
+    margin: auto;
+  }
+}

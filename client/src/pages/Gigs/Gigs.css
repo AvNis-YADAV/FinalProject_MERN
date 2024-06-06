@@ -1,0 +1,114 @@
+.gigs {
+  display: flex;
+  justify-content: center;
+}
+.gigs .container {
+  width: 95%;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.gigs .container .breadcrumbs {
+  font-weight: 300;
+  font-size: 13px;
+  color: #555;
+}
+.gigs .container p {
+  color: #999;
+  font-weight: 300;
+}
+.gigs .container .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gigs .container .menu .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #555;
+  font-weight: 300;
+}
+@media screen and (max-width: 600px) {
+  .gigs .container .menu .left {
+    flex-direction: column;
+  }
+}
+.gigs .container .menu .left input {
+  padding: 5px;
+  border: 1px solid lightgray;
+  outline: none;
+  width: 100%;
+}
+.gigs .container .menu .left input::-moz-placeholder {
+  color: gray;
+}
+.gigs .container .menu .left input::placeholder {
+  color: gray;
+}
+.gigs .container .menu .left button {
+  background-color: var(--green-color);
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.gigs .container .menu .right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.gigs .container .menu .right .sortBy {
+  color: #555;
+  font-weight: 300;
+}
+.gigs .container .menu .right .sortType {
+  font-weight: 500;
+}
+.gigs .container .menu .right img {
+  width: 15px;
+  cursor: pointer;
+}
+.gigs .container .menu .right .rightMenu {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 0.5px solid lightgrey;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #555;
+}
+.gigs .container .menu .right .rightMenu span {
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .gigs .container .menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.gigs .container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.gigs .container .cards .loader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .gigs .container .cards {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=Gigs.css.map */
